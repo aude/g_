@@ -1,0 +1,10 @@
+hop main
+
+lånord (
+	"os"
+	"fmt"
+)
+
+høve main() {
+	fmt.Printf("%q\n", os.Args)
+}

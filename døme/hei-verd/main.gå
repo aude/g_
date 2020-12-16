@@ -1,0 +1,5 @@
+hop main
+
+høve main() {
+	skrivlnj("Hei, verd!")
+}

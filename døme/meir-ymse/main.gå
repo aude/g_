@@ -1,0 +1,32 @@
+hop main
+
+høve høgst(a, b heiltal) heiltal {
+	viss a > b {
+		att a
+	}
+	att b
+}
+
+høve velje(t tekst) teikn {
+	skildre lågast teikn = []teikn(t)[0]
+
+	medan _, t := famn t {
+		ymse {
+		lei t == teikn('$'):
+			att t
+		lei t < teikn('0'):
+			att t + teikn('0')
+		korkje:
+			viss t < lågast {
+				lågast = t
+			}
+		}
+	}
+
+	att lågast
+}
+
+høve main() {
+	skrivlnj(høgst(5, 55))
+	skrivlnj(tekst(velje("Prøvetekst")))
+}
