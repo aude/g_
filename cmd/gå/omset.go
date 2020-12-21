@@ -39,7 +39,7 @@ var Omsetjingar = []*Omsetjing{
 	NyOmsetjing("korkje", "default"),
 	NyOmsetjing("dett", "fallthrough"),
 	NyOmsetjing("kaffipause", "break"),
-	NyOmsetjing("haldfram", "continue"),
+	NyOmsetjing("fortset", "continue"),
 	NyOmsetjing("seinare", "defer"),
 	NyOmsetjing("skriv", "print"),
 	NyOmsetjing("skrivlnj", "println"),
