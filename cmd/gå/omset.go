@@ -17,7 +17,7 @@ type Omsetjing struct {
 
 func NyOmsetjing(anglisk, nynorsk string) *Omsetjing {
 	omsetjing := new(Omsetjing)
-	omsetjing.fastOmgrep = regexp.MustCompile(`(\W|^)` + anglisk + `(\W|$)`)
+	omsetjing.fastOmgrep = regexp.MustCompile(`([^\p{L}\d]|^)` + anglisk + `([^\p{L}\d]|$)`)
 	omsetjing.ombyte = []byte("${1}" + nynorsk + "${2}")
 	return omsetjing
 }
