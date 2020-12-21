@@ -60,9 +60,9 @@ var Omsetjingar = []*Omsetjing{
 }
 
 func Omset(inn io.Reader, ut io.Writer) error {
-	søkar := bufio.NewScanner(inn)
-	for søkar.Scan() {
-		linje := søkar.Bytes()
+	søkjar := bufio.NewScanner(inn)
+	for søkjar.Scan() {
+		linje := søkjar.Bytes()
 		for _, omsetjing := range Omsetjingar {
 			linje = omsetjing.fastOmgrep.ReplaceAll(linje, omsetjing.ombyte)
 		}
@@ -71,7 +71,7 @@ func Omset(inn io.Reader, ut io.Writer) error {
 			return fmt.Errorf("skrivefeil: %q", feil)
 		}
 	}
-	if feil := søkar.Err(); feil != nil {
+	if feil := søkjar.Err(); feil != nil {
 		return fmt.Errorf("lesefeil: %q", feil)
 	}
 	return nil
