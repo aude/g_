@@ -44,6 +44,7 @@ var Omsetjingar = []*Omsetjing{
 	NyOmsetjing("skriv", "print"),
 	NyOmsetjing("skrivlnj", "println"),
 	NyOmsetjing("attåt", "append"),
+	NyOmsetjing("ny", "new"),
 	NyOmsetjing("lag", "make"),
 	NyOmsetjing("døy", "panic"),
 	NyOmsetjing("gå", "go"),
