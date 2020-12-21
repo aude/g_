@@ -51,6 +51,7 @@ var Omsetjingar = []*Omsetjing{
 	NyOmsetjing("tekst", "string"),
 	NyOmsetjing("bete", "byte"),
 	NyOmsetjing("teikn", "rune"),
+	NyOmsetjing("kanskje", "bool"),
 	NyOmsetjing("drag", "chan"),
 	NyOmsetjing("bokmål", "error"),
 }
