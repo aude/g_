@@ -52,6 +52,7 @@ var Omsetjingar = []*Omsetjing{
 	NyOmsetjing("bete", "byte"),
 	NyOmsetjing("teikn", "rune"),
 	NyOmsetjing("kanskje", "bool"),
+	NyOmsetjing("kart", "map"),
 	NyOmsetjing("drag", "chan"),
 	NyOmsetjing("bokmål", "error"),
 }
