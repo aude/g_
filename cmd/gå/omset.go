@@ -43,6 +43,7 @@ var Omsetjingar = []*Omsetjing{
 	NyOmsetjing("seinare", "defer"),
 	NyOmsetjing("skriv", "print"),
 	NyOmsetjing("skrivlnj", "println"),
+	NyOmsetjing("attåt", "append"),
 	NyOmsetjing("lag", "make"),
 	NyOmsetjing("døy", "panic"),
 	NyOmsetjing("gå", "go"),
